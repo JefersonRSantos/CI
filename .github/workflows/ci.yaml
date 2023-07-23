@@ -26,6 +26,6 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: false
-          tags: JefersonRSantos/ci
+          tags: jefersonsantosfc/docker-ci
 
          
