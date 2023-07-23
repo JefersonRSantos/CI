@@ -15,7 +15,7 @@ jobs:
       - run: go test
       - run: go run math.go
       
-      - name: Set up QEMU
+      - name: Set up QEMUs
         uses: docker/setup-qemu-action@v1
 
       - name: Set up Docker Buildx
@@ -26,5 +26,5 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: false
-          tags: JefersonRSantos/CI
+          tags: jefersonsantosfc
          
